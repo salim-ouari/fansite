@@ -1,0 +1,205 @@
+.bodya {
+    background-image: url("cool-backround3.png");
+}
+
+
+.futchamp {
+    font-size: 300%;
+    color: rgb(235, 185, 14);
+    font-style: italic;
+    text-align: center;
+    font-family: Tahoma;
+    margin-top: 4%;
+    text-shadow: 8px 8px 12px black;
+}
+
+
+.intro {
+    font-size: 31px;
+    border-style: double ;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgb(162, 20, 11);
+    margin-top: 3%;
+}
+
+
+.logo {
+    position: absolute;
+    bottom: 75%;
+    left: 0%;
+    margin-bottom: -1%;
+}
+
+
+.logo2 {
+    position:absolute;
+    bottom: 75%;
+    right: 0%;
+    margin-bottom: -1%;
+
+}
+
+
+.para {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.global {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: -8%;
+}
+
+
+.left, .right, .milieu{
+display: flex;
+flex-direction: column;
+margin-top: 10%;
+border-radius: 10%;
+}
+
+.left img, .right img {
+    width: 300px;
+    height: 220px;
+    margin-top: 10%;
+    border-radius: 10%;
+}
+
+
+.playoffs {
+    font-family: monospace;
+    font-size: 40px;
+    color: navy;
+    text-align: center;
+    text-shadow: 3px 2px gray
+
+}
+
+.texteplayoffs {
+    font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.qualifplayoffs {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 25px;
+    color: rgb(162, 20, 11);
+}
+
+.q1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 18px;
+}
+
+
+
+.finals {
+    font-family: monospace;
+    font-size: 40px;
+    color: navy;
+    text-align: center;
+    text-shadow: 3px 2px gray
+}
+
+.textefinals {
+    font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.qualiffinals {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 25px;
+    color: rgb(162, 20, 11);
+}
+
+.q2 {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/****************** CSS FANSITE 2 (PAGE MEDIA) *************/
+
+.bodyb {
+    background-color: rgb(228, 215, 215);
+}
+
+.media {
+    font-size: 350%;
+    color: rgb(20, 0, 131);
+    font-style: italic;
+    text-align: center;
+    font-family: Tahoma;
+    margin-top: 3%;
+    text-shadow: 8px 8px 12px black
+}
+
+
+.logo3 {
+    position:absolute;
+    bottom: 88%;
+    right: 77%;
+    margin-bottom: -3%;
+    width: 300px;
+}
+
+.logo4 {
+    position:absolute;
+    bottom: 88%;
+    left: 77%;
+    margin-bottom: -3%;
+    width: 300px;
+}
+
+
+.meilleur {
+    font-family: unset;
+    color: rgb(30, 126, 216);
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+    border-style: double ;
+
+}
+
+
+.pire {
+    font-family: unset;
+    color: rgb(30, 126, 216);
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+    border-style: double ;
+    
+}
+
+
+.videobutetcoupfranc {
+margin-top: 3%;
+display: flex; flex-direction: row;
+display: flex; justify-content: space-around
+}
+
+
+.videofailetdrole {
+
+margin-top: 3%;
+display: flex; flex-direction: row;
+display: flex; justify-content: space-around
+}
+
