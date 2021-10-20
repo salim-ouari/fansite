@@ -1,44 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulaire</title>
+  <title>formulaire</title>
   <link rel="stylesheet" href="fansite.css" />
-  <!-- <link rel="stylesheet" href="<link rel=" stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />">
-  
-  copier lien cdf - copier code icon sur font.awesome
-  -balise i + code de l'icons(copier)
-  -->
 </head>
 
-<body class="formulaire">
-  <main>
+<body>
+
+  <header>
+    <!-- ****************navbar***************** -->
+    <nav class="inner-header">
+      <ul>
+        <img id="logo-nav" src="assets/fifa.logo.png" alt="logo">
+
+        <li><a href="https://www.ea.com/fr-fr/games/fifa/fifa-22/news">actualité</a></li>
+        <li><a href="fansite1.html">Evenements</a></li>
+        <li><a href="fansite2.html">Média</a></li>
+        <li><a href="formulaire.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main class="formulaire">
+
     <div class="grid">
 
       <div class="grid-container">
         <div class="img">
-          <img src="notebook-2282300_960_720.png" height="200" alt="logo" />
+          <img src="./assets/fifa.logo.png" height="50" alt="logo" />
         </div>
         <form>
-
-          <input type="text " id="firstname" placeholder="Titre" />
-
-          <label for="meeting-time">Date et heure :</label>
-
-          <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-10-12T19:30"
-            min="2021-01-01T00:00" max="2021-12-31T00:00" />
-
-          <input type="text" id="surname" placeholder="Catégorie" />
-          <textarea cols="30" rows="30" placeholder="Description..."></textarea>
-          <input type="submit" value="Enregistrer" />
+          <input type="text " id="firstname" placeholder="Prénom" />
+          <input type="text" id="surname" placeholder="Nom" />
+          <textarea cols="30" rows="30" placeholder="Ici votre message"></textarea>
+          <input type="submit" value="Valider" />
         </form>
       </div>
     </div>
   </main>
+
+  <!-- ************FOOTER******************** -->
+  <footer>
+
+    <button>Acheter FIFA22</button>
+
+    <div id="deuxiémeTrait"></div>
+
+
+
+    <!-- *******************ICONS************************* -->
+    <div id="icons">
+
+
+      <a href="http://www.twitter.fr">
+        <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
+
+
+      <a href="http://www.instagram.com">
+        <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" /></a>
+
+      <a href="http://www.facebook.fr">
+        <img src="https://img.icons8.com/fluency/48/000000/facebook.png" /></a>
+
+      <!-- *********************LOGO-PEGI*********************** -->
+      <div class="img-footer">
+        <img id="pegi" data-src="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/pegi/fr.svg" alt=""
+          loading="lazy" src="https://media.contentapi.ea.com/content/dam/gin/common/rating-icons/pegi/fr.svg"
+          class="eapl-rating-link__image-auto-width">
+        <img id="logo-fifa" src="assets/fifa.logo.png" alt="logo">
+      </div>
+
+      <!-- ******************copyright********************** -->
+      <div id="copyright">
+        <span>© Salimouari(); 2021</span>
+      </div>
+
+  </footer>
 </body>
 
 </html>

@@ -57,6 +57,7 @@ header li a {
   background: url(assets/fifa-22-mbappe.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
   height: 799px;
+  width: 100%;
 }
 
 h1 {
@@ -190,58 +191,278 @@ button:hover {
   left: 20px;
 }
 
-/************* style-formulaire********** */
+/************style formulaire************/
 
 .formulaire {
-  background: url(mars.jpg) no-repeat fixed center/cover;
+  width: 50%;
+  min-height: 500px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 15px;
 }
 
-main {
-  background: whitesmoke;
-  width: 40%;
-  min-height: 500px;
-  margin: 0 auto;
-  border-radius: 15px;
-  box-shadow: 0 2px 12px 5px rgba(38, 161, 135, 0.247);
-  background-color: rgba(247, 247, 247, 0.596);
+.grid {
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 10px;
+  position: relative;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
   padding: 20px;
-  backdrop-filter: blur(3px);
-  border: 2px solid rgb(58, 84, 117);
+}
+.img {
+  text-align: center;
 }
 
 form {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "bt bt";
 }
-
-.grid-container {
-  padding: 10px;
-  display: grid;
-}
-.img {
-  justify-content: center;
-  text-align: center;
-}
-
 input,
 textarea {
   margin: 5px;
   height: 45px;
-  border: 1px solid rgb(0, 141, 141);
+  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
   font-size: 1.1rem;
+  font-family: "font-1";
 }
-
+#firstname {
+  grid-area: i1;
+}
+#surname {
+  grid-area: i2;
+}
 textarea {
+  grid-area: ta;
   resize: none;
 }
-
 input[type="submit"] {
+  grid-area: bt;
   cursor: pointer;
-  background-color: rgb(55, 163, 182);
+  background-color: var(--color2);
   transition: 0.4s;
+  color: white;
 }
 input[type="submit"]:hover {
-  background: rgb(34, 85, 128);
+  background: var(--color1);
   color: white;
+}
+
+/* **************Responsive************* */
+@media screen {
+  max-width: 1000px;
+}
+.grid-container {
+  display: block;
+}
+
+@media screen {
+  max-width: 780px;
+}
+form {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1"
+    "i2"
+    "ta"
+    "bt";
+}
+
+/* **************css yanis: page futch , page média*************** */
+
+.bodya {
+  background-image: url("cool-backround3.png");
+}
+
+.futchamp {
+  font-size: 300%;
+  color: rgb(235, 185, 14);
+  font-style: italic;
+  text-align: center;
+  font-family: Tahoma;
+  margin-top: 2%;
+  text-shadow: 8px 8px 12px black;
+}
+
+.intro {
+  font-size: 31px;
+  border-style: double;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: rgb(162, 20, 11);
+  margin-top: 3%;
+}
+
+.logo {
+  position: absolute;
+  bottom: 55%;
+  left: 0%;
+  margin-bottom: -1%;
+}
+
+.logo2 {
+  position: absolute;
+  bottom: 55%;
+  right: 0%;
+  margin-bottom: -1%;
+}
+
+.para {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.global {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -8%;
+}
+
+.left,
+.right,
+.milieu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  border-radius: 10%;
+}
+
+.left img,
+.right img {
+  width: 300px;
+  height: 220px;
+  margin-top: 10%;
+  border-radius: 10%;
+}
+
+.playoffs {
+  font-family: monospace;
+  font-size: 40px;
+  color: navy;
+  text-align: center;
+  text-shadow: 3px 2px gray;
+}
+
+.texteplayoffs {
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.qualifplayoffs {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 25px;
+  color: rgb(162, 20, 11);
+}
+
+.q1 {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 18px;
+}
+
+.finals {
+  font-family: monospace;
+  font-size: 40px;
+  color: navy;
+  text-align: center;
+  text-shadow: 3px 2px gray;
+}
+
+.textefinals {
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.qualiffinals {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 25px;
+  color: rgb(162, 20, 11);
+}
+
+.q2 {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 18px;
+}
+
+/****************** CSS FANSITE 2 (PAGE MEDIA) *************/
+
+.bodyb {
+  background-color: rgb(228, 215, 215);
+}
+
+.media {
+  font-size: 350%;
+  color: rgb(20, 0, 131);
+  font-style: italic;
+  text-align: center;
+  font-family: Tahoma;
+  margin-top: 3%;
+  text-shadow: 8px 8px 12px black;
+}
+
+.logo3 {
+  position: absolute;
+  bottom: 88%;
+  right: 77%;
+  margin-bottom: -3%;
+  width: 300px;
+}
+
+.logo4 {
+  position: absolute;
+  bottom: 88%;
+  left: 77%;
+  margin-bottom: -3%;
+  width: 300px;
+}
+
+.meilleur {
+  font-family: unset;
+  color: rgb(30, 126, 216);
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px;
+  border-style: double;
+}
+
+.pire {
+  font-family: unset;
+  color: rgb(30, 126, 216);
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px;
+  border-style: double;
+}
+
+.videobutetcoupfranc {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.videofailetdrole {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
 }
